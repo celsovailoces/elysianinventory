@@ -1,0 +1,164 @@
+<?php require_once 'includes/dashboard.php'; ?>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElySian Flower's</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/validation.js"></script> 
+  </head>  
+  
+  <body class="size-1140">
+  	<!-- PREMIUM FEATURES BUTTON -->
+  	<a target="_blank" class="hide-s" href="contact.html"../template/prospera-premium-responsive-business-template/" style="position:fixed;top:120px;right:-14px;z-index:10;"> <img src="img/premium-features.png" alt=""></a>
+    <!-- HEADER -->
+    <header role="banner">    
+      <!-- Top Bar -->
+      <div class="top-bar background-white">
+        <div class="line">
+          <div class="s-12 m-6 l-6">
+            <div class="top-bar-contact">
+            <!--  <p class="text-size-12">Contact Us: +6390 666 54881 | <a class="text-orange-hover" href="mailto:contact@sampledomain.com">celzvailoces@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="s-12 m-6 l-6">
+            <div class="right">
+              <ul class="top-bar-social right">
+                <li><a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj6nJ799LfsAhWbyIsBHY1YD6oQPAgI"><i class="icon-facebook_circle text-orange-hover"></i></a></li>
+                <li><a href="/"><i class="icon-twitter_circle text-orange-hover"></i></a> </li>
+                <li><a href="/"><i class="icon-google_plus_circle text-orange-hover"></i></a></li>
+                <li><a href="/"><i class="icon-instagram_circle text-orange-hover"></i></a></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Top Navigation -->
+      <nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo"><img src="img/Elysian.png" alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Flowers</a></li>
+            <!--  <li><a>Services</a>
+                <ul>
+                <li><a>Service 1</a>
+                    <ul>
+                      <li><a>Service 1 A</a></li>
+                      <li><a>Service 1 B</a></li>
+                    </ul> 
+                  </li>
+                  <li><a>Service 2</a></li> 
+                </ul>
+              </li> -->
+              <li><a href="about.html">About</a></li>
+            <!--  <li><a href="gallery.html">Gallery</a></li> -->
+              <li><a href="contact.html">Contact</a></li>
+			  <li><a href="inventory-management-system/index.php">Inventory</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+			<h1><center></h1></center>
+    </header>
+					<div class="row">
+  <div class="col-50">
+    <div class="container">
+      <form action="/inventory-management-system/dashboard.php">
+
+        <div class="row">
+          <div class="col-50">
+           <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="celzvailoces@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Address">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Zamboanga City">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Amount</label>
+                <input type="text" id="state" name="amount" placeholder="Amount">
+              </div>
+           <!--   <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-50"> </center>
+          <!--  <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+			<label for="cname">Pcs of Flowers</label>
+            <input type="text" id="cname" name="cardname" placeholder="Pcs">
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+         <!--   <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div> -->
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+		  <form action="inventory-management-system/dashboard.php">
+      </form>
+    </div>
+  </div>
+
+ <!-- <div class="col-25">
+    <div class="container">
+      <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div> -->
+  </div>
+</div>
